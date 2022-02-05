@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+/*共通部分********************************/
+.container {
+	padding:40px 0 0 0;}
+.container a{text-decoration: none;}
+
+.space_wrap {
+	margin:6% auto 10%;
+	overflow: hidden;
+}
+
+.mg_center{margin:0 auto;}
+.mg_b20{margin-bottom:20px;}
+.mg_b10{margin-bottom:10px;}
+.mg_b5{margin-bottom:5px;}
+
+.float_l{float:left;}
+.float_r{float:right;}
+
+.wrap_message{
+	background:#fff2cc;
+	text-align:center;
+	font-weight:bold;
+	padding:10px 0;
+	margin:0 0 20px 0;
+	width:100%;
+}
+
+.title_wrap {
+	border-top:3px solid #333333;
+	border-bottom:3px solid #333333;
+	text-align:center;
+	padding:5px 0;
+	margin:0 0 20px 0;
+	width:100%;
+	font-size:50px;
+}
+
+body{background:#ffffff;}
+
+.all_wrap_white {
+	width:100%;
+	background:#ffffff;
+	overflow: hidden;
+}
+
+.index_wrap_back .all_wrap_white {
+	background:none;
+}
+
+pre {
+    display: block;
+    padding: 0;
+    margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background: none;
+    border: none;
+    border-radius: 0;
+    white-space: pre-wrap;
+    font-family: inherit;
+}
+
+
+/*ボタン部分********************************/
+.btn_half {width:46%;}
+.btn-primary a,
+.btn-success a,
+.btn-info a,
+.btn-warning a,
+.btn-danger a
+{color:#ffffff; font-weight:bold;}
+
+.btn-default a{color:#333333;}
+
+.btn_half_left {
+	width:46%;
+	float:left;
+	overflow: hidden;
+}
+.btn_half_right {
+	width:46%;
+	float:right;
+	overflow: hidden;
+}
+
+
+/*ナビ部分（nav.jsp）********************************/
+.navbar-default .navbar-nav>.disabled>a, .navbar-default .navbar-nav>.disabled>a:focus, .navbar-default .navbar-nav>.disabled>a:hover{
+	color:#333333;
+	cursor:default;
+}
+
+.navbar-nav .btn{
+	margin:8px 0 0 15px;
+}
+
+.nav>li>a{
+	padding:0;
+}
+.nav>li>a.dropdown-item,
+.nav>li.disabled{
+	padding: 15px 10px;
+}
+
+.navbar-default {
+	background-color: #FCFCFC;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+}
+
+/*フッター部分（footer.jsp）********************************/
+#footer_wrap {
+	width:100%;
+	background:#00008b;
+	text-align:center;
+	color:#ffffff;
+	padding:20px 0 20px 0;
+	clear:both;
+
+
+}
+
+/* ページトップ */
+#page-top {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 80%;
+}
+#page-top a {
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    font-size:18px;
+    font-weight:bold;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+
+/*ログインページ部分********************************/
+#login_form_wrap {
+	margin:0 auto;
+	padding:3% 5%;
+	width:45%;
+	min-width:470px;
+	background:#f2f2f2;
+	border-radius:10px;
+	overflow: hidden;
+}
+
+#login_form_wrap h2{
+	text-align:center;
+	margin:0 0 5% 0;
+	padding:0 0 4% 0;
+	font-size: 18px;
+	line-height:18px;
+	border-bottom:2px dotted #dddddd;
+}
+
+#login_form_wrap h3 {
+	width:30%;
+	margin:0 0 3% 0;
+	float:left;
+	font-size: 14px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+#login_form_wrap p {
+	width:70%;
+	margin:0 0 3% 0;
+	float:left;
+	font-size: 14px;
+	line-height:20px;
+}
+#login_form_wrap p input{
+	width:100%;
+}
+
+#login_form_wrap .login_form_input_wrap{
+	overflow: hidden;
+	width:100%;
+	padding:0 0 4% 0;
+}
+
+#login_form_wrap .login_accountadd_wrap{
+	clear:both;
+	padding:4% 0 0 0;
+	width:100%;
+	overflow: hidden;
+}
+
+#login_form_wrap .login_accountadd_text{
+	text-align:center;
+	border-top:2px dotted #dddddd;
+	margin:5% 0 0 0;
+	padding:4% 0 2%;
+	width:100%;
+}
+
+#login_form_wrap .login_accountadd_btn{
+	width:100%;
+}
+#login_form_wrap .login_accountadd_btn button{
+	width:100%;
+}
+
+
+/*トップページ部分********************************/
+#index_wrap{
+	background:url('/Orion/index_back_image.jpg') no-repeat center center/cover;
+}
+
+#index_wrap .index_apartment_search_form_wrap{
+	width:75%;
+	min-width:820px;
+	margin:13% auto 16%;
+	padding:6% 5%;
+	background:rgb(255,255,255,0.97);
+	border:1px solid #dddddd;
+	overflow: hidden;
+	border-radius:50px;
+}
+
+/*【共通】各入力画面・確認画面ページ********************************/
+#table_common_wrap{overflow: hidden; clear:both;}
+
+#table_common_wrap .table-responsive {
+	border-bottom:1px solid #ddd;
+	margin:0 0 50px;
+}
+
+#table_common_wrap .table-responsive table {
+	margin:0;
+}
+
+#table_common_wrap .table-responsive table tr {
+	min-height:18px;
+}
+
+#table_common_wrap .table-responsive table th {
+	width:26%;
+	background:#f5f5f5;
+	vertical-align: middle;
+	padding:8px 2.5%;
+}
+
+#table_common_wrap .table-responsive table th span {
+	font-size: 12px;
+	line-height: 14px;
+	color:#808080;
+	vertical-align: middle;
+}
+
+#table_common_wrap .table-responsive table th span.red_tx,
+#table_common_wrap .red_tx {
+	color:#ff0000;
+}
+
+#table_common_wrap .table-responsive table td {
+	width:64%;
+	padding:8px 2.5%;
+}
+
+#table_common_wrap .table-responsive table td select {
+	height: 25px;
+}
+
+#table_common_wrap .table-responsive table td textarea {
+  resize: vertical;
+  width:450px;
+  height:200px;
+}
+
+#table_common_wrap p{margin: 0;}
+
+#table_common_wrap .btn-primary a,
+#table_common_wrap .btn-success a,
+#table_common_wrap .btn-info a,
+#table_common_wrap .btn-warning a,
+#table_common_wrap .btn-danger a{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#table_common_wrap div.btn_3c {
+	margin:0 0 150px;
+	clear:both;
+}
+#table_common_wrap div.btn_3c p {
+	width:30%;
+	float:left;
+}
+#table_common_wrap div.btn_3c button {
+	width:100%;
+	padding:12px 0;
+	font-size: 18px;
+	font-weight: none;
+}
+#table_common_wrap div.btn_3c p:nth-of-type(2) {
+	margin: 0 5%;
+}
+
+#table_common_wrap form{
+	overflow: hidden;
+}
+
+#table_common_wrap div.btn_2c {
+	margin:0 0 150px;
+	clear:both;
+}
+#table_common_wrap div.btn_2c p {
+	width:46%;
+	float:left;
+}
+#table_common_wrap div.btn_2c button {
+	width:100%;
+	padding:12px 0;
+	font-size: 18px;
+	font-weight: none;
+}
+#table_common_wrap div.btn_2c p:nth-of-type(2) {
+	float:right;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select,
+button {
+    outline: none;
+}
+
+
+/*物件一覧ページ部分********************************/
+.apartment_search_img button,
+.apartment_search_h3 button {
+	background: none;
+	border-style: none;
+	text-align: left;
+	width: 100%;
+	padding: 0;
+}
+
+#apartment_search_wrap .apartment_search_img {
+	float:left;
+	width:28%;
+	height:180px;
+	/*padding:10px 0;*/
+	border:1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+#apartment_search_wrap .apartment_search_img img {
+	width:100%;
+	max-height:180px;
+	object-fit:contain;
+}
+
+#apartment_search_wrap .apartment_search_left{
+	float:right;
+	width:70%;
+}
+
+#apartment_search_wrap .table-responsive {
+	width:100%;
+}
+
+#apartment_search_wrap .table-responsive table {
+	border-bottom:1px solid #ddd;
+}
+
+#apartment_search_wrap .table-responsive table th {
+	width:20%;
+	background:#f5f5f5;
+}
+
+#apartment_search_wrap .table-responsive table td {
+	width:80%;
+}
+
+#apartment_search_wrap .panel-heading h3{
+	font-weight: bold;
+/* 	color:#fff; */
+	color:#1b1313;
+}
+
+#apartment_search_wrap .panel{
+	margin-bottom: 30px;
+}
+
+#apartment_search_wrap .panel-default{
+    border: 3px solid #fff2cc;
+}
+
+#apartment_search_wrap .panel-default .panel-heading{
+    background: #fff2cc;
+	border-bottom: #f0ad4e 2px solid;
+}
+
+
+/*物件検索インクルード部分（apartment_search_form.jsp）********************************/
+.apartment_search_form_gray_wrap{
+	width:100%;
+	margin:0 auto 20px auto;
+	padding:3% 5%;
+	background:#f5f5f5;
+	border:1px solid #dddddd;
+	overflow: hidden;
+}
+
+.apartment_search_form_wrap{
+	width:100%;
+	overflow: hidden;
+}
+.apartment_search_form_wrap h2{
+	text-align:center;
+	margin:0 0 20px 0;
+	padding:0 0 10px 0;
+	font-size: 18px;
+	line-height:18px;
+	border-bottom:2px dotted #dddddd;
+}
+
+.apartment_search_form_left{
+	width:46%;
+	float:left;
+}
+
+.apartment_search_form_right{
+	width:46%;
+	float:right;
+}
+
+.apartment_search_form_wrap h3{
+	font-size: 14px;
+	line-height:20px;
+	font-weight:bold;
+	float:left;
+	clear:both;
+	margin:0 0 15px 0;
+	padding:0;
+	width:35%;
+}
+
+.apartment_search_form_wrap p.form_parts{
+	font-size: 14px;
+	line-height:20px;
+	float:left;
+	margin:0 0 15px 0;
+	padding:0;
+}
+input[type=checkbox], input[type=radio]{
+	margin:0;
+}
+
+.apartment_search_form_wrap .appartment_search_form_btn{
+	clear:both;
+	width:30%;
+	margin:0 auto;
+	padding: 12px 0 0 0;
+}
+.apartment_search_form_wrap button{
+	width:100%;
+}
+
+.apartment_search_form_inwrap {
+	overflow: hidden;
+	padding: 15px 0 30px;
+}
+
+.apartment_search_form_wrap .btn_half_left{
+	width:40%;
+	float:left;
+	margin: 0 0 0 9%;
+}
+
+.apartment_search_form_wrap .btn_half_right{
+	width:40%;
+	float:right;
+	margin: 0 9% 0 0;
+}
+
+/*アカウント検索インクルード部分（account_search_form.jsp）*/
+.account_search_form_gray_wrap{
+	width:100%;
+	margin:0 auto 20px auto;
+	padding:3% 5%;
+	background:#f5f5f5;
+	border:1px solid #dddddd;
+	overflow: hidden;
+}
+
+.account_search_form_wrap{
+	width:100%;
+	overflow: hidden;
+}
+.account_search_form_wrap h2{
+	text-align:center;
+	margin:0 0 20px 0;
+	padding:0 0 10px 0;
+	font-size: 18px;
+	line-height:18px;
+	border-bottom:2px dotted #dddddd;
+}
+
+.account_search_form_left{
+	width:46%;
+	float:left;
+}
+
+.account_search_form_right{
+	width:46%;
+	float:right;
+}
+
+.account_search_form_wrap h3{
+	font-size: 14px;
+	line-height:20px;
+	font-weight:bold;
+	float:left;
+	clear:both;
+	margin:0 0 15px 0;
+	padding:0;
+	width:35%;
+}
+
+.account_search_form_wrap p.form_parts{
+	font-size: 14px;
+	line-height:20px;
+	float:left;
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+.account_search_form_inwrap {
+	overflow: hidden;
+	padding: 15px 0 30px;
+}
+
+.account_search_form_wrap .btn_half_left{
+	width:40%;
+	float:left;
+	margin: 0 0 0 9%;
+}
+
+.account_search_form_wrap .btn_half_right{
+	width:40%;
+	float:right;
+	margin: 0 9% 0 0;
+}
+
+
+/*物件詳細・口コミ投稿履歴ページ部分********************************/
+#apartment_detail_wrap{
+	width:100%;
+}
+
+#apartment_detail_wrap .midashi_wrap,
+#apartment_review_wrap .midashi_wrap{
+	color: #333333;
+	text-align:center;
+	font-weight:bold;
+	padding:15px 0;
+	margin:0 0 25px 0;
+	width:100%;
+	clear:both;
+	border-bottom: solid 10px #fff2cc;
+}
+
+#apartment_detail_wrap .midashi_wrap h3,
+#apartment_review_wrap .midashi_wrap h3{
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+#apartment_detail_wrap .apartment_detail_img {
+	width:65%;
+	height:480px;
+	/*padding:10px 0;*/
+	margin:0 auto;
+	border:1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+#apartment_detail_wrap .apartment_detail_img img {
+	width:100%;
+	max-height:480px;
+	object-fit:contain;
+}
+
+#apartment_detail_wrap .apartment_detail_description{
+	margin: 30px 0 10px;
+    border-top: 3px dotted #ddd;
+    padding: 10px 0 0;
+}
+
+#apartment_detail_wrap .table-responsive table {
+	border-bottom:1px solid #ddd;
+	margin:0 0 40px 0;
+}
+
+#apartment_detail_wrap .table-responsive table th {
+	width:20%;
+	background:#f5f5f5;
+}
+
+#apartment_detail_wrap .table-responsive table td {
+	width:80%;
+}
+
+#apartment_detail_wrap p.btn_custom{
+	margin:0 0 40px 0;
+}
+
+#apartment_review_wrap .review_midashi_wrap{
+	clear:both;
+	padding:40px 0 0;
+	border-top:3px dotted #ddd;
+
+	overflow:hidden;
+}
+
+#apartment_review_wrap .table-responsive table th {
+	width:12%;
+	border:none;
+}
+
+#apartment_review_wrap .table-responsive table td {
+	width:88%;
+	border:none;
+}
+
+#apartment_review_wrap .apartment_review_btn{
+	clear:both;
+	padding:10px 0 0;
+	border-top:2px dotted #ddd;
+}
+
+#apartment_review_wrap .apartment_review_btn .btn_custom {
+	float:left;
+	margin:0 20px 0 0;
+}
+.review_search_none {
+	padding: 0 0 50px 0;
+}
